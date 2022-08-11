@@ -1,1 +1,27 @@
+Q1/Write a method that will remove any given character from a String?
+sol\
+replace()
+     -----------------------------------------------------------
+Q2/Write a program to find all prime numbers up to a given range of numbers?
+sol\
+x=int(input('inter start number : ')) 
+y=int(input('inter end number : ')) 
+st='' 
+for i in range(x,y+1): 
+    if i%2!=0: 
+        print(i)
+     -----------------------------------------------------------
 
+Q3/write a function that count how many the given character repeatedin a given string?
+sol\
+def rr(seq): 
+    leteer={} 
+    for i in seq: 
+        if i in leteer: 
+            leteer[i]+=1 
+           
+        else:                               
+            leteer[i]=1     
+           
+    return leteer 
+print(rr('ACGTAATCGGTTAACCTA'))
